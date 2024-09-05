@@ -1,350 +1,90 @@
-<html>
-    <title>MY PORTFOLIO</title>
-    <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
-    
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-      
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Rajdhani:wght@300;400;500;600;700&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poiret+One&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-    </head>
-
-
-    <script>
-        function openNav(){
-            document.getElementById("mysidenav").style.width="100%";
-            document.getElementById("mysidenav").style.backgroundColor="White";
-            document.getElementById("mysidenav").style.
-            document.getElementById("mysidenav").style.opacity="0.99";
-            document.getElementById("main").style.marginLeft="250px";
-            
-        }
-        function closeNav(){
-            document.getElementById("mysidenav").style.width="0";
-            document.getElementById("main").style.marginLeft="0";
-            
-        }
-      </script>
-    
-
-    <body>
-        <div class="navbar">
-            <p id="name">Victor Chinedu</p>
-            <div id="mysidenav" class="sidenav">
-            <div id="close" class="closebtn" onclick="closeNav()">&times;</a><br/></div>
-            <div class="buttons">
-                <p><a href="">Work</a></p>
-                <p><a href="">About</a></p>
-                <p><a href="">Contact</a></p>
-            </div>
-            </div>
-            <span onclick="openNav()" style="font-size: 40px;">&rightarrow;</span>
-        </div>
-
-        <div class="firstcontainer">
-            <p id="firsttxt">Hey! I'm Victor Chinedu</p>
-            <p id="scndtxt">My recent work can be viewed here</p>
-        </div>
-
-
-
-
-        <div id="maincnt"class="sticky" >
-            <div id="maincnt1" >
-            <div id="firstwork" class="sticky1">
-                <img src="https://static.wixstatic.com/media/b2ee2c_07a79bd356d94866bf01fc0ecc0b36f9~mv2.jpg/v1/fill/w_844,h_764,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/phase-3_2150x2000.jpg">
-                <div class="overlay">
-                    <p id="word1"><a target="_blank" href="https://victor12345678900000000.github.io/jhinorastore/jhinora?">JHINORA STUDIO</a></p>
-                    <p id="word2">Showcased the level of my prowess in Front End programming.Showing the use of external font and creative user friendly interface </p>
-                </div>
-            </div>
-            <div id="scndwork" class="sticky1">
-                <img src="https://kidoriman.com/cdn/shop/files/Obabrown1920_5_1_1_256x@3x.jpg?v=1705731124">
-            <div class="overlay">
-                <p id="word3"><a target="_blank" href="https://victor12345678900000000.github.io/Vc-store/Store.html?">VC-STORE</a></p>
-                <p id="word4">A shoppinng website created with simple too use interface and easy manoeuvreability  </p>
-            </div>
-            </div>
-            </div>
-        </div>
-<hr>
-
-<div class="follow">
-    <a href=""><img src="https://img.icons8.com/?size=100&id=118468&format=png&color=000000"></a>
-    <a href=""><img src="https://img.icons8.com/?size=100&id=32292&format=png&color=000000"></a>
-    <a href=""><img src="https://img.icons8.com/?size=100&id=84521&format=png&color=000000" alt=""></a>
-    <a href=""><img src="https://img.icons8.com/?size=100&id=37325&format=png&color=000000"></a>
-
-</div>
-
-    </body>
+<body id="background-change">
+    <h1 class="welcome-text">Welcome!</h1>
+    <div class="enter">
+        <form action="welcome.html" target="_blank">
+        <button type="submit" >Enter</button>
+        </form>
+    </div>
+</body>
 <style>
-    .follow{
-        margin-left: 45vw;
-       padding-left: 10px;
-       display: flex;
+    body{
+        background-image:
+    url("https://i.pinimg.com/originals/bc/3d/b4/bc3db4f51517257764fb80ef2f15b724.jpg");
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-name: changeBackground ;
+        text-align:center;
     }
-    .follow img{
-                width: 30px;
-                height: 30px;
-                background-color: ;
-            }
-    hr{
-        width: 80vw;
-    }
-    #word3{
-        top: 0;
-        font-family:Poiret One, sans-serif ;
-        font-size: 50px;
-
-    }
-    #word3 a{
-        color: white;
-    }
-    #word1 a{
-        color: white;
-        
-    }
-    #word4{
-        font-family: "Cormorant Garamond", serif ;
-        font-size: 20px;
-        color: white;
-    }
-    #word1{
-        font-family:Poiret One, sans-serif ;
-        font-size: 50px;
-        color: white;
-    }
-    #word2{
-        font-family: "Cormorant Garamond", serif ;
-        font-size: 20px;
-        color: white;
-    }
-    img:hover{
-        background-color: rgba(0, 0, 0, 0.5);
-        opacity: 1;
-      transition: opacity 0.3s ease-in-out;
-      filter: blur(2px);
-    }
-    .overlay{
-        top: 20vh;
-        width: 25vw;
-        left: 25vw;
-        position: absolute;
-        
-        
-    }
-</style>
-
-
-</html>
-<style>
-    @media screen and (orientation:landscape) {
-        #close{
-            margin-left:-10vw ;
-        }
-        span{
-            margin-left: -100vw;
-        }
-        .sticky {
-  position: sticky;
-  top:0;
-}
-.sticky1 {
-  position: sticky;
-  top: 5vh;
-}
-    #maincnt{
-        width: auto;
-        height: 250vh;
+    .form{
         text-align: center;
-        background-color: ;
-        
+        margin-top: 40px;
+        margin-bottom: 50px;
+        margin-right: 5px;
     }
-    #maincnt1{
-        padding-top: 20vh;
-        display: block;
-        
-        
+    
+    p{
+        font-size: xx-large;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
     }
-    #firstwork{
-        width: 70vw;
-        overflow: hidden;
-        background-color: ;
-        
-    }
-    #scndwork{
-        width: 70vw;
-        height: 50vh;
-        background-color: ;
-        overflow: hidden;
-        
-    }
-    #firstwork, #scndwork{
-        margin-left: 15vw;
-        height: 100vh;
-        
-        
-        
-    }
-    .firstcontainer{
-        width: auto;
+    
+    input{
+        border-radius: 50px;
+        width: 200px;
+        height: 20px;
+        background-color: inherit;
         text-align: center;
-        height: 30vh;
-        margin-top: 25vh;
-        font-size: 30px;
-        font-family: "Instrument Serif", serif ;
-    }
-    .navbar{
-        display: flex;
-        margin-top: 10vh;
-       font-size: 15px;
-       font-family: "Instrument Serif", serif ;
-
-    }
-    .buttons{
-        margin-left: 60vw;
-        margin-top: 3vh;
-        
-        
-    }
-    .buttons, a{
-        
         color: black;
-        text-decoration: none;
-        column-gap: 10px;
-        display: flex;
-    }
-    #name{
-        margin-left: 10vw;
-    }
-}
-</style>
-
-<style>
-    @media screen and (orientation:portrait) {
-        hr{
-            margin-top: 10vw;
-        }
-        .follow{
-            margin-top: 5vh;
-            margin-bottom: 5vh;
-            margin-left: 20pc;
-            
-        }
-        .follow img{
-            width: 50px;
-            height: 50px;
-            padding: 15px;
-            
-        }
         
-        .overlay{
-            
-            margin-top: 40vh;
-            
-        }
-        #word1{
-            font-size: 100px;
-            margin-top: -10vh;
-        }
-        #word2{
-            font-size: 30px;
-        }
-        #word3{
-            margin-top: 40vh;
-            font-size: 100px;
-            width: 60vw;
-        }
-        #word4{
-        font-size: 40px;
-        }
-        #maincnt{
-            margin-top: 20vh;
-        }
-        #maincnt1,img{
-            width: 100vw;
-        }
-        .firstcontainer{
-            margin-top: 10vh;
-            
-        }
-        #firsttxt{
-            font-size: 50px;
-            text-align: center;
-        }
-        #scndtxt{
-            font-size: 40px;
-            text-align: center;
-        }
-        span{
-        padding-top: 40px;
-        margin-left: 55vw;
+        
         
     }
-    .navbar{
-        display: flex;
+    .repository-link{
+    display:none;
     }
-    
-    .sidebar.closebtn{
-        position: absolute;
-       
+    button{
+        border-radius: 20px;
+        background-color: inherit;
+        color: black;
+        width: 200px;
+        margin-top:50%;
+        height: 80px;
         
     }
-    #close{
-        font-size: 50px;
+    button:hover{
+        cursor:pointer;
+    }
+    hr{
+        margin-top: 70%;
         text-align: center;
-    }
-    .sidenav a {
-        padding :30px 30px 30px 30px;
-        text-decoration: none;
-        color: #818181;
-        display: block;
-        transition: 0.3s;
-        font-family: "Instrument Serif", serif;
-        font-size: 70px;
+        
         
     }
-    .sidenav a:hover{
-        color: burlywood;
+    .bottom{
+        text-align: center;
+        margin-top: 100px;
+        
+        
     }
-    .sidebar.closebtn{
-        transition: 0.5s ease;
+    .enter{
+        text-align: center;
+        margin-top: 20px;
+        margin-right: 5px;
+        margin-top: 20%;
     }
-    .sidenav{
-        height: 100%;
-        width: 0;
-        position:fixed;
-        z-index:6;
+    .welcome-text {
+    font-size: 4em;
+    color: blue;
+    animation: animateText 3s ease-in-out infinite;
+  }
 
-        
-        top: 0;
-        left: 0;
-        background-color: #111;
-        overflow-x: hidden;
-        padding-top:60px;
-        transition: 0.5s;
-        
-    }
-    #name{
-        font-size: 40px;
-        margin-left: 5vw;
-    }
-    }
+  @keyframes animateText {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+  }
 </style>
