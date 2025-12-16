@@ -1,350 +1,343 @@
+<!DOCTYPE html>
 <html>
+<head>
     <title>MY PORTFOLIO</title>
-    <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
-    
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-      
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Rajdhani:wght@300;400;500;600;700&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poiret+One&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-    </head>
-
-
-    <script>
-        function openNav(){
-            document.getElementById("mysidenav").style.width="100%";
-            document.getElementById("mysidenav").style.backgroundColor="White";
-            document.getElementById("mysidenav").style.
-            document.getElementById("mysidenav").style.opacity="0.99";
-            document.getElementById("main").style.marginLeft="250px";
-            
-        }
-        function closeNav(){
-            document.getElementById("mysidenav").style.width="0";
-            document.getElementById("main").style.marginLeft="0";
-            
-        }
-      </script>
     
+    <style>
+        /* =================================================================== */
+        /* BASE STYLES (MOBILE-FIRST) - Applied to all screens by default */
+        /* =================================================================== */
 
-    <body>
-        <div class="navbar">
-            <p id="name">Victor Chinedu</p>
-            <div id="mysidenav" class="sidenav">
-            <div id="close" class="closebtn" onclick="closeNav()">&times;</a><br/></div>
+        body {
+            background-color: #000000;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* ESSENTIAL: Responsive Images */
+        #maincnt1 img, img {
+            max-width: 100%;
+            height: auto;
+            display: block; /* Ensure block-level for margin/padding consistency */
+        }
+        
+        a {
+            text-decoration: none;
+        }
+
+        /* Navbar & Menu */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 5vw;
+            margin-top: 2vh;
+            font-family: "Instrument Serif", serif;
+        }
+        
+        #name {
+            font-size: 1.5rem; /* Smaller font for mobile */
+            margin: 0;
+        }
+
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 6;
+            top: 0;
+            left: 0;
+            background-color: white; /* Changed from #111 to white as per JS */
+            opacity: 0.99;
+            overflow-x: hidden;
+            padding-top: 60px;
+            transition: 0.5s;
+        }
+
+        .sidenav a {
+            padding: 15px; /* Smaller padding for mobile */
+            text-decoration: none;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+            font-family: "Instrument Serif", serif;
+            font-size: 2rem; /* Smaller font for mobile menu */
+            text-align: center;
+        }
+
+        .sidenav a:hover {
+            color: burlywood;
+        }
+
+        #close {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 3rem;
+            color: black; /* Set color to be visible on white background */
+            cursor: pointer;
+        }
+
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 30px;
+        }
+        .buttons p {
+            margin: 10px 0;
+        }
+
+        /* First Container (Intro Text) */
+        .firstcontainer {
+            width: 90vw;
+            margin: 10vh auto 5vh auto;
+            text-align: center;
+            font-family: "Instrument Serif", serif;
+        }
+        
+        #firsttxt {
+            font-size: 2.5rem; /* Mobile font size */
+        }
+        
+        #scndtxt {
+            font-size: 1.5rem; /* Mobile font size */
+        }
+
+        /* Main Content (Work) */
+        #maincnt {
+            width: 90vw;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        #maincnt1 {
+            padding-top: 5vh;
+            display: flex;
+            flex-direction: column; /* Stacked vertically on mobile */
+            gap: 40px;
+        }
+        
+        #firstwork, #scndwork {
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Image and Overlay */
+        .overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); /* Center the overlay */
+            width: 80%; /* Takes up most of the work container */
+            text-align: center;
+        }
+        
+        #word1 a, #word3 a {
+            color: white;
+            font-family: 'Poiret One', sans-serif;
+            font-size: 2.5rem; /* Mobile font size */
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        #word2, #word4 {
+            font-family: "Cormorant Garamond", serif;
+            font-size: 1rem; /* Mobile font size */
+            color: white;
+        }
+
+        /* Follow/Social Links */
+        hr {
+            width: 90vw;
+            border-color: #333;
+            margin-top: 5vh;
+        }
+
+        .follow {
+            display: flex;
+            justify-content: center; /* Center social icons on mobile */
+            padding: 20px 0;
+        }
+        
+        .follow img {
+            width: 40px; /* Slightly larger icons for easy tapping */
+            height: 40px;
+            padding: 10px;
+        }
+
+        /* Hover Effect for Images */
+        #firstwork img:hover, #scndwork img:hover {
+            opacity: 0.5;
+            transition: opacity 0.3s ease-in-out;
+            filter: blur(2px);
+        }
+
+        /* =================================================================== */
+        /* DESKTOP/TABLET STYLES (Min-width: 768px) - Overrides for larger screens */
+        /* =================================================================== */
+        @media (min-width: 768px) {
+            
+            /* Navbar & Menu (Desktop Sizing) */
+            .navbar {
+                margin-top: 10vh;
+                font-size: 15px;
+            }
+            #name {
+                font-size: 40px;
+                margin-left: 10vw;
+            }
+            .sidenav a {
+                font-size: 70px;
+                padding: 30px;
+            }
+            .buttons {
+                flex-direction: row;
+                margin-left: 60vw;
+                margin-top: -3.5vh;
+                gap: 20px;
+            }
+            .buttons p {
+                margin: 0;
+            }
+            #close {
+                font-size: 50px;
+            }
+
+            /* First Container (Desktop Sizing) */
+            .firstcontainer {
+                margin-top: 25vh;
+                font-size: 30px;
+            }
+            #firsttxt {
+                font-size: 50px;
+            }
+            #scndtxt {
+                font-size: 40px;
+            }
+
+            /* Main Content (Desktop Grid/Flex Layout) */
+            #maincnt1 {
+                padding-top: 20vh;
+                display: flex; /* Display work items side-by-side */
+                flex-direction: row;
+                justify-content: center;
+                gap: 5vw;
+                height: 100vh;
+            }
+            
+            #firstwork, #scndwork {
+                width: 35vw; /* Set a fixed width for desktop column */
+                height: 70vh;
+                margin: 0;
+            }
+
+            /* Overlay (Desktop Sizing) */
+            .overlay {
+                top: 20vh; /* Original desktop position */
+                left: 50%;
+                transform: translateX(-50%);
+                width: 80%;
+                text-align: left;
+            }
+            #word1 a, #word3 a {
+                font-size: 50px; 
+            }
+            #word2, #word4 {
+                font-size: 20px;
+            }
+
+            /* Follow/Social Links */
+            .follow {
+                margin-left: 45vw; /* Original desktop position */
+                justify-content: flex-start;
+            }
+            .follow img {
+                width: 30px;
+                height: 30px;
+                padding: 0 10px 0 0;
+            }
+            hr {
+                width: 80vw;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        function openNav() {
+            document.getElementById("mysidenav").style.width = "100%";
+            document.getElementById("mysidenav").style.backgroundColor = "White";
+            document.getElementById("mysidenav").style.opacity = "0.99";
+            // Removed document.getElementById("main").style.marginLeft="250px"; as it references an element that doesn't exist and can break responsiveness
+        }
+        function closeNav() {
+            document.getElementById("mysidenav").style.width = "0";
+            // Removed document.getElementById("main").style.marginLeft="0";
+        }
+    </script>
+
+    <div class="navbar">
+        <p id="name">Victor Chinedu</p>
+        <div id="mysidenav" class="sidenav">
+            <div id="close" class="closebtn" onclick="closeNav()">&times;</div><br/>
             <div class="buttons">
                 <p><a href="">Work</a></p>
                 <p><a href="">About</a></p>
                 <p><a href="">Contact</a></p>
             </div>
-            </div>
-            <span onclick="openNav()" style="font-size: 40px;">&rightarrow;</span>
         </div>
+        <span onclick="openNav()" style="font-size: 40px; cursor: pointer;">&rightarrow;</span>
+    </div>
 
-        <div class="firstcontainer">
-            <p id="firsttxt">Hey! I'm Victor Chinedu</p>
-            <p id="scndtxt">My recent work can be viewed here</p>
-        </div>
+    <div class="firstcontainer">
+        <p id="firsttxt">Hey! I'm Victor Chinedu</p>
+        <p id="scndtxt">My recent work can be viewed here</p>
+    </div>
 
-
-
-
-        <div id="maincnt"class="sticky" >
-            <div id="maincnt1" >
-            <div id="firstwork" class="sticky1">
+    <div id="maincnt">
+        <div id="maincnt1">
+            <div id="firstwork">
                 <img src="https://static.wixstatic.com/media/b2ee2c_07a79bd356d94866bf01fc0ecc0b36f9~mv2.jpg/v1/fill/w_844,h_764,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/phase-3_2150x2000.jpg">
                 <div class="overlay">
                     <p id="word1"><a target="_blank" href="https://victor12345678900000000.github.io/jhinorastore/jhinora?">JHINORA STUDIO</a></p>
-                    <p id="word2">Showcased the level of my prowess in Front End programming.Showing the use of external font and creative user friendly interface </p>
+                    <p id="word2">Showcased the level of my prowess in Front End programming. Showing the use of external font and creative user friendly interface</p>
                 </div>
             </div>
-            <div id="scndwork" class="sticky1">
+            <div id="scndwork">
                 <img src="https://kidoriman.com/cdn/shop/files/Obabrown1920_5_1_1_256x@3x.jpg?v=1705731124">
-            <div class="overlay">
-                <p id="word3"><a target="_blank" href="https://victor12345678900000000.github.io/Vc-store/Store.html?">VC-STORE</a></p>
-                <p id="word4">A shoppinng website created with simple to use interface and easy manoeuvreability  </p>
-            </div>
-            </div>
+                <div class="overlay">
+                    <p id="word3"><a target="_blank" href="https://victor12345678900000000.github.io/Vc-store/Store.html?">VC-STORE</a></p>
+                    <p id="word4">A shoppinng website created with simple to use interface and easy manoeuvreability</p>
+                </div>
             </div>
         </div>
-<hr>
-
-<div class="follow">
-    <a href=""><img src="https://img.icons8.com/?size=100&id=118468&format=png&color=000000"></a>
-    <a href=""><img src="https://img.icons8.com/?size=100&id=32292&format=png&color=000000"></a>
-    <a href=""><img src="https://img.icons8.com/?size=100&id=84521&format=png&color=000000" alt=""></a>
-    <a href=""><img src="https://img.icons8.com/?size=100&id=37325&format=png&color=000000"></a>
-
-</div>
-
-    </body>
-<style>
-    .follow{
-        margin-left: 45vw;
-       padding-left: 10px;
-       display: flex;
-    }
-    .follow img{
-                width: 30px;
-                height: 30px;
-                background-color: ;
-            }
-    hr{
-        width: 80vw;
-    }
-    #word3{
-        top: 0;
-        font-family:Poiret One, sans-serif ;
-        font-size: 50px;
-
-    }
-    #word3 a{
-        color: white;
-    }
-    #word1 a{
-        color: white;
-        
-    }
-    #word4{
-        font-family: "Cormorant Garamond", serif ;
-        font-size: 20px;
-        color: white;
-    }
-    #word1{
-        font-family:Poiret One, sans-serif ;
-        font-size: 50px;
-        color: white;
-    }
-    #word2{
-        font-family: "Cormorant Garamond", serif ;
-        font-size: 20px;
-        color: white;
-    }
-    img:hover{
-        background-color: rgba(0, 0, 0, 0.5);
-        opacity: 1;
-      transition: opacity 0.3s ease-in-out;
-      filter: blur(2px);
-    }
-    .overlay{
-        top: 20vh;
-        width: 25vw;
-        left: 25vw;
-        position: absolute;
-        
-        
-    }
-</style>
-
-
-</html>
-<style>
-    @media screen and (orientation:landscape) {
-        #close{
-            margin-left:-110vw ;
-        }
-        span{
-            margin-left: -100vw;
-        }
-        .sticky {
-  position: sticky;
-  top:0;
-}
-.sticky1 {
-  position: sticky;
-  top: 5vh;
-}
-    #maincnt{
-        width: auto;
-        height: 250vh;
-        text-align: center;
-        background-color: ;
-        
-    }
-    #maincnt1{
-        padding-top: 20vh;
-        display: block;
-        
-        
-    }
-    #firstwork{
-        width: 70vw;
-        overflow: hidden;
-        background-color: ;
-        
-    }
-    #scndwork{
-        width: 70vw;
-        height: 50vh;
-        background-color: ;
-        overflow: hidden;
-        
-    }
-    #firstwork, #scndwork{
-        margin-left: 15vw;
-        height: 100vh;
-        
-        
-        
-    }
-    .firstcontainer{
-        width: auto;
-        text-align: center;
-        height: 30vh;
-        margin-top: 25vh;
-        font-size: 30px;
-        font-family: "Instrument Serif", serif ;
-    }
-    .navbar{
-        display: flex;
-        margin-top: 10vh;
-       font-size: 15px;
-       font-family: "Instrument Serif", serif ;
-
-    }
-    .buttons{
-        margin-left: 60vw;
-        margin-top: -3.5vh;
-        
-        
-    }
-    .buttons, a{
-        
-        color: black;
-        text-decoration: none;
-        column-gap: 10px;
-        display: flex;
-    }
-    #name{
-        margin-left: 10vw;
-    }
-}
-</style>
-
-<style>
-    @media screen and (orientation:portrait) {
-        hr{
-            margin-top: 10vw;
-        }
-        .follow{
-            margin-top: 5vh;
-            margin-bottom: 5vh;
-            margin-left: 20pc;
-            
-        }
-        .follow img{
-            width: 50px;
-            height: 50px;
-            padding: 15px;
-            
-        }
-        
-        .overlay{
-            
-            margin-top: 40vh;
-            
-        }
-        #word1{
-            font-size: 100px;
-            margin-top: -10vh;
-        }
-        #word2{
-            font-size: 30px;
-        }
-        #word3{
-            margin-top: 40vh;
-            font-size: 100px;
-            width: 60vw;
-        }
-        #word4{
-        font-size: 40px;
-        }
-        #maincnt{
-            margin-top: 20vh;
-        }
-        #maincnt1,img{
-            width: 100vw;
-        }
-        .firstcontainer{
-            margin-top: 10vh;
-            
-        }
-        #firsttxt{
-            font-size: 50px;
-            text-align: center;
-        }
-        #scndtxt{
-            font-size: 40px;
-            text-align: center;
-        }
-        span{
-        padding-top: 40px;
-        margin-left: 55vw;
-        
-    }
-    .navbar{
-        display: flex;
-    }
+    </div>
     
-    .sidebar.closebtn{
-        position: absolute;
-       
-        
-    }
-    #close{
-        font-size: 50px;
-        text-align: center;
-    }
-    .sidenav a {
-        padding :30px 30px 30px 30px;
-        text-decoration: none;
-        color: #818181;
-        display: block;
-        transition: 0.3s;
-        font-family: "Instrument Serif", serif;
-        font-size: 70px;
-        
-    }
-    .sidenav a:hover{
-        color: burlywood;
-    }
-    .sidebar.closebtn{
-        transition: 0.5s ease;
-    }
-    .sidenav{
-        height: 100%;
-        width: 0;
-        position:fixed;
-        z-index:6;
+    <hr>
 
-        
-        top: 0;
-        left: 0;
-        background-color: #111;
-        overflow-x: hidden;
-        padding-top:60px;
-        transition: 0.5s;
-        
-    }
-    #name{
-        font-size: 40px;
-        margin-left: 5vw;
-    }
-    }
-</style>
+    <div class="follow">
+        <a href=""><img src="https://img.icons8.com/?size=100&id=118468&format=png&color=000000"></a>
+        <a href=""><img src="https://img.icons8.com/?size=100&id=32292&format=png&color=000000"></a>
+        <a href=""><img src="https://img.icons8.com/?size=100&id=84521&format=png&color=000000" alt="Instagram Icon"></a>
+        <a href=""><img src="https://img.icons8.com/?size=100&id=37325&format=png&color=000000"></a>
+    </div>
+
+</body>
+</html>
