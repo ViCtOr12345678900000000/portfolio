@@ -5,7 +5,7 @@ export default function Info(){
             <span className="text-[10px] text-black/60">•</span>
             <p className="text-[10px]">vercel.com/vardevictor78-8708s-projects</p>
             <span className="text-[10px] text-black/30">-</span>
-            <p className="text-[10px]">built with thoughful detail</p>
+            <p className="text-[10px]">built with thoughful detail.</p>
 
         </div>
     )
