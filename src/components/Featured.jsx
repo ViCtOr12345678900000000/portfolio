@@ -63,7 +63,7 @@ export default function Featured(){
                               <span className="text-black px-2 py-2 rounded-full bg-white text-[10px] border border-black" >Rechart</span> 
                         </div>
                         <p className="text-sm ">
-                            <a className="underline hover:cursor-pointer" href="https://map-t2h4.vercel.app/">Visit</a>
+                            <a className="underline hover:cursor-pointer" href="https://nexora-pro-seven.vercel.app/">Visit</a>
                             <span className="text-[9px] mx-1">➤</span>
                         </p>
                     </div>
