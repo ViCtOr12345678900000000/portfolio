@@ -45,7 +45,7 @@ export default function OtherProjects() {
           <div key={i} className="group cursor-pointer">
             {/* Image now redirects */}
             <a href={p.link} target="_blank" rel="noopener noreferrer">
-              <div className="bg-white w-full h-[280px] md:h-[150px] md:w-[200px] lg:w-[430px] rounded-sm overflow-hidden shadow-sm">
+              <div className="bg-white w-full h-[280px] md:h-[150px] md:w-[225px] lg:w-[430px] rounded-sm overflow-hidden shadow-sm">
                 <img
                   src={p.img}
                   alt={p.title}
@@ -57,7 +57,12 @@ export default function OtherProjects() {
             {/* Text under */}
             <div className="mt-4 flex items-start justify-between">
               <div>
+                <div className="flex  gap-5">
                 <h3 className="text-[16px] font-medium">{p.title}</h3>
+                 <span className="md:mt-[-5px] md:p-2 text-[13px] text-black/40 border border-black/10 rounded-full px-3 py-1 group-hover:bg-black group-hover:text-white transition-colors">
+                {p.year}
+                 </span>
+                </div>
                 <p className="text-[13px] text-black/50 mt-1 max-w-[300px]">{p.tag}</p>
 
                 {p.stack.length > 0 && (
@@ -74,9 +79,7 @@ export default function OtherProjects() {
                   </div>
                 )}
               </div>
-              <span className="text-[13px] text-black/40 border border-black/10 rounded-full px-3 py-1 group-hover:bg-black group-hover:text-white transition-colors">
-                {p.year}
-              </span>
+             
             </div>
           </div>
         ))}

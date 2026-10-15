@@ -18,7 +18,7 @@ export default function Sidebar({ isOpen, setIsOpen }) {
         ${isOpen? 'translate-x-0' : '-translate-x-full'}
       `}>
         <div className="p-5 flex items-center justify-between border-b border-black/5">
-          <p className="font-bold text-[13px] tracking-[0.15em] uppercase">Portfolio</p>
+          <p className="font-bold text-[13px] tracking-[0.15em] uppercase">Portfolio <span className='text-black/50'>•</span> VC</p>
           <button onClick={() => setIsOpen(false)} className="w-7 h-7 rounded-full bg-black/5 grid place-items-center">✕</button>
         </div>
 
