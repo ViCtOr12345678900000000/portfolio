@@ -1,5 +1,6 @@
 import nexoraImg from "../assets/Nexora.png"
-import mapora from "../assets/mapora.png"
+
+import nexorapro from "../assets/nexorapro.png"
 export default function Featured(){
     return(
         <>
@@ -52,14 +53,14 @@ export default function Featured(){
                 {/*for nexora dshbord*/}
                 <div className="p-5 justify-self shadow-md border   bg-gray-100 rounded-sm text-black md:flex mt-3">
                     <div className="md:w-[300px] lg:w-[700px] md:pt-8 lg:pt-8">
-                    <p className="text-[20px] lg:text-[25px] font-bold">Mapora</p>
-                    <p className="text-[10px] lg:text-[20px] font-extralight lg:w-[900px] "> A beginner-level map coded with React, vanilla CSS and JS </p>
+                    <p className="text-[20px] lg:text-[25px] font-bold">Nexora Pro</p>
+                    <p className="text-[10px] lg:text-[20px] font-extralight lg:w-[900px] ">Built a responsive SaaS dashboard to master React list management, interactive customer management with live search, filters & CRUD</p>
 
                         <div className="flex mx-[-22px] gap-2 p-5 md:mx-[-22px]">
                              <span className="text-black px-2 py-2 rounded-full bg-white text-[10px] border border-black" >React</span>
                              <span className="text-black px-2 py-2 rounded-full bg-white text-[10px]  border border-black" >Typescript</span>
-                              <span className="text-black px-2 py-2 rounded-full bg-white text-[10px] border border-black" >Vanilla CSS</span>
-                               
+                              <span className="text-black px-2 py-2 rounded-full bg-white text-[10px] border border-black" >Tailwind</span>
+                              <span className="text-black px-2 py-2 rounded-full bg-white text-[10px] border border-black" >Rechart</span> 
                         </div>
                         <p className="text-sm ">
                             <a className="underline hover:cursor-pointer" href="https://map-t2h4.vercel.app/">Visit</a>
@@ -70,7 +71,7 @@ export default function Featured(){
                    <div className="bg-inherit border-none md:w-[350px] mt-5 h-[200px] rounded-sm ">
   <img
     className="w-full h-full lg:ml-25  object-contain scale-100  "
-    src={mapora}
+    src={nexorapro}
     alt="Nexora dashboard"
     
   />

@@ -6,7 +6,7 @@ export default function Developer(){
 From SaaS dashboards to e-commerce stores, I turn complex ideas into clean, responsive interfaces using React and Tailwind.</p>
 
         <div className="flex gap-2 p-2 md:mx-[-8px]">
-            <span className=" p-2 text-center rounded-full border w-30 text-black bg-white hover:cursor-text">
+            <span className=" text-sm p-2 text-center rounded-full border w-30 text-black bg-white hover:cursor-text">
                 View Works <span>↓</span>
             </span>
              <button className="rounded-full border border-black w-30 text-white bg-black hover:cursor-pointer" >

@@ -1,7 +1,7 @@
 // components/Navbar.jsx
 export default function Navbar({ isOpen, setIsOpen }){
   return(
-    <header className="md:w-50% h-16 w-full px-4 lg:px-8 flex items-center justify-between bg-white border-b border-black/10 sticky top-0 z-20">
+    <header className="h-16 w-full px-4 lg:px-8 flex items-center justify-between bg-white border-b border-black/10 sticky top-0 z-20">
       <div className="flex items-center gap-4">
         <button onClick={() => setIsOpen(!isOpen)} className="md:hidden w-9 h-9 rounded-full bg-[#1a1a20] text-white grid place-items-center hover:cursor-pointer">
           <span>{isOpen? '✕' : '≡'}</span>
