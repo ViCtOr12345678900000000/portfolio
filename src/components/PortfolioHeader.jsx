@@ -3,13 +3,13 @@ import { Link, useLocation, useNavigate } from "react-router-dom"
 
 export default function PortfolioHeader(){
   const [open, setOpen] = useState(false)
-  const location = useLocation()
-  const navigate = useNavigate()
+  const location = useLocation() //locstion im on now
+  const navigate = useNavigate() // locstion i wsnt to be
 
   const goToWork = () => {
     setOpen(false)
     if(location.pathname!== "/"){
-      navigate("/")
+      navigate("/") //if im not @ home tske me there
       setTimeout(()=> document.getElementById("work-start")?.scrollIntoView({behavior:"smooth"}), 150)
     } else {
       document.getElementById("work-start")?.scrollIntoView({behavior:"smooth"})

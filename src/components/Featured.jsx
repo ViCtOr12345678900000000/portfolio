@@ -6,6 +6,10 @@ import lumina1 from "../assets/lumina-1.png"
 import lumina2 from "../assets/lumina-2.png"
 import lumina3 from "../assets/lumina-3.png"
 
+import jhinora1 from "../assets/jhinora-1.png"
+import jhinora2 from "../assets/jhinora-2.png"
+import jhinora3 from "../assets/jhinora-3.png"
+
 function LuminaGallery() {
   const images = [lumina1, lumina2, lumina3]
   const [active, setActive] = useState(0)
@@ -22,6 +26,26 @@ function LuminaGallery() {
         ))}
       </div>
       <p className="text-[10px] xl:text-[11px] text-white/30 text-center">{active + 1} / 3 • Click to switch</p>
+    </div>
+  )
+}
+
+function JhinoraProGallery() {
+  const images = [jhinora1, jhinora2, jhinora3]
+  const [active, setActive] = useState(0)
+  return (
+    <div className="w-full lg:w-[50%] xl:w-[55%] 2xl:w-[60%] flex flex-col gap-3">
+      <div className="w-full aspect-[16/10] bg-white rounded-lg xl:rounded-xl overflow-hidden border border-black/10 shadow-2xl">
+        <img src={images[active]} alt={`Jhinora Pro ${active+1}`} className="w-full h-full object-cover object-top" />
+      </div>
+      <div className="grid grid-cols-3 gap-2 xl:gap-3">
+        {images.map((img, i) => (
+          <button key={i} onClick={() => setActive(i)} className={`aspect-[16/10] rounded-md overflow-hidden border-2 transition-all ${active === i? "border-black scale-[1.02]" : "border-black/10 opacity-60 hover:opacity-100"}`}>
+            <img src={img} alt={`thumb ${i+1}`} className="w-full h-full object-cover object-top" />
+          </button>
+        ))}
+      </div>
+      <p className="text-[10px] xl:text-[11px] text-black/30 text-center">{active + 1} / 3 • Click to switch</p>
     </div>
   )
 }
@@ -50,11 +74,39 @@ export default function Featured(){
                              <span className="px-3 py-1.5 rounded-full bg-white/10 text-[10px] xl:text-[11px] border border-white/10">Supabase</span>
                         </div>
                         <div className="mt-6 flex gap-3">
-                          <a className="text-[12px] xl:text-[13px] px-4 py-2 rounded-full bg-white text-black font-medium hover:bg-zinc-200 transition" href="https://lum-bay.vercel.app/" target="_blank" rel="noopener noreferrer">Live Demo ➤</a>
-                          <a className="text-[12px] xl:text-[13px] px-4 py-2 rounded-full border border-white/20 hover:bg-white/10 transition" href="https://lum-bay.vercel.app/" target="_blank" rel="noopener noreferrer">Visit Site</a>
+                          <a className="text-[12px] xl:text-[13px] px-4 py-2 rounded-full bg-white text-black font-medium hover:bg-zinc-200 transition" href="https://lum-bay.vercel.app/" target="_blank">Live Demo ➤</a>
+                          <a className="text-[12px] xl:text-[13px] px-4 py-2 rounded-full border border-white/20 hover:bg-white/10 transition" href="https://lum-bay.vercel.app/" target="_blank">Visit Site</a>
                         </div>
                     </div>
                     <LuminaGallery />
+                </div>
+            </div>
+
+            {/* 01ii - JHINORA PRO - SAME AS LUMINA */}
+            <div className="px-5 md:px-8 lg:px-10 xl:px-20 2xl:px-32 py-8 xl:py-12 border-b border-black/10">
+                <p className="uppercase text-[11px] xl:text-[12px] tracking-widest text-black/50 mb-4">Featured Project - 01ii</p>
+                <div className="flex flex-col lg:flex-row justify-between items-start gap-6 xl:gap-16 p-5 xl:p-10 border bg-[#fefefe] rounded-xl xl:rounded-2xl text-black">
+                    <div className="w-full lg:w-[45%]">
+                        <div className="flex gap-2 mb-2">
+                          <span className="text-[10px] px-2.5 py-1 rounded-full bg-black text-white font-medium">Flagship</span>
+                          <span className="text-[10px] px-2.5 py-1 rounded-full border border-black/15">2026 • Studio Website</span>
+                        </div>
+                        <p className="text-[22px] xl:text-[32px] font-bold">Jhinora Pro</p>
+                        <p className="text-[13px] xl:text-[15px] text-black/60 mt-2 leading-relaxed">
+                          High-fashion studio portfolio for Jhinora Studios. Editorial storytelling, sticky project reveals, fullscreen manifesto and immersive bottom contact.
+                        </p>
+                        <div className="flex flex-wrap gap-2 mt-5">
+                             <span className="px-3 py-1.5 rounded-full bg-black text-white text-[10px] xl:text-[11px] border border-black">React</span>
+                             <span className="px-3 py-1.5 rounded-full bg-white text-[10px] xl:text-[11px] border border-black">Framer Motion</span>
+                             <span className="px-3 py-1.5 rounded-full bg-white text-[10px] xl:text-[11px] border border-black">Tailwind</span>
+                             <span className="px-3 py-1.5 rounded-full bg-white text-[10px] xl:text-[11px] border border-black">Lenis Scroll</span>
+                        </div>
+                        <div className="mt-6 flex gap-3">
+                          <a className="text-[12px] xl:text-[13px] px-4 py-2 rounded-full bg-black text-white font-medium hover:bg-zinc-800 transition" href="https://jhin-chi.vercel.app" target="_blank">Live Demo ➤</a>
+                          <a className="text-[12px] xl:text-[13px] px-4 py-2 rounded-full border border-black/15 hover:bg-black/5 transition" href="https://jhin-chi.vercel.app" target="_blank">Visit Site</a>
+                        </div>
+                    </div>
+                    <JhinoraProGallery />
                 </div>
             </div>
 

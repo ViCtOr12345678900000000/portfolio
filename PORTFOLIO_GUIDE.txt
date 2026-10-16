@@ -1,0 +1,85 @@
+VICTOR CHINEDU PORTFOLIO - COMPLETE EXPLANATION GUIDE
+
+Created for you so you never get lost again.
+
+1. WHY YOUR OLD CLICKS DIDN'T WORK
+
+Old Developer.jsx:
+  <span>View Works ↓</span> // no onClick
+  <button>Get in touch</button> // no function
+Plus old App.jsx had no BrowserRouter
+
+2. Developer.jsx FIX
+
+useLocation() = WHERE AM I NOW?
+useNavigate() = TAKE ME SOMEWHERE
+
+handleViewWorks:
+  if not on "/" -> navigate("/") + wait 150ms + scroll to work-start
+  else -> scroll directly
+  document.getElementById("work-start")?.scrollIntoView({behavior:"smooth"})
+
+handleGetInTouch: navigate("/contact") = same as Contact link
+
+3. PortfolioHeader.jsx
+
+[open, setOpen] = false = menu closed
+goToWork = close menu + if not home go home + scroll to Lumina
+closeMenu = setOpen(false)
+
+<header> sticky top-0 z-[100] = sticks on top
+
+Desktop: hidden md:flex = show on desktop, hide mobile
+Mobile hamburger: md:hidden = show mobile only, toggle!open
+  2 spans rotate 45deg/-45deg = X when open
+
+Mobile menu: {open && (...)} = only show if open true
+  absolute top-[60px] full width dropdown
+  contacts at bottom: vardevictor78@gmail.com / +2348134526761
+
+4. LINK vs NAVIGATE vs ROUTE
+
+Link = SEE it <Link to="/about">About</Link> = door with sign
+navigate() = CODE navigate("/contact") = invisible push, use when need logic
+Route = MAP <Route path="/contact" element={<Contact />} /> defines pages
+
+Rule: Menu item? Use Link. Button with logic? Use navigate(). Defining? Use Route
+
+5. ROUTE MUST COME FIRST
+
+Step1 App.jsx: <BrowserRouter><Routes><Route path="/contact"...>
+Step2 Header/Developer: <Link> or navigate()
+
+No Step1 = blank page / 404
+
+6. OTHER CHANGES
+
+a) Panel.jsx id="work-start" = anchor for scroll
+b) App.jsx rewrote = now BrowserRouter + header outside Routes + 5 pages
+c) New pages: Contact.jsx (your email/whatsapp + lum-bay.vercel.app etc), Work.jsx, About.jsx, Services.jsx
+d) Featured.jsx fixed links from # to https://lum-bay.vercel.app/
+e) index.css html {scroll-behavior:smooth}
+f) Fixed double border
+
+7. APP.jsx vs PANEL.jsx SPLIT
+
+Old App.jsx = Router + Home content together = breaks when adding pages
+
+New:
+Panel.jsx = Home Dashboard: Developer + Featured (Lumina 01i) + Nexora
+App.jsx = House: BrowserRouter + PortfolioHeader + Routes -> path "/" shows Panel
+
+Want change homepage? Edit Panel.jsx. Want new page? Add Route in App.jsx.
+
+App.jsx=House, Panel.jsx=Living Room, About=Bedroom, Contact=Kitchen
+
+CHEAT SHEET
+
+View Works not scroll? Check id="work-start" in Panel.jsx + handleViewWorks in Developer.jsx
+Blank /contact? Check Route in App.jsx inside BrowserRouter?
+Header disappears? Check PortfolioHeader outside Routes inside BrowserRouter?
+Mobile menu not close? Check onClick={closeMenu}
+Images not on Vercel? Use /image.png from public/ folder
+
+Contacts: vardevictor78@gmail.com / +2348134526761
+Lumina: lum-bay.vercel.app / Nexora: nexora-theta-liart.vercel.app / Audivox: audivox.vercel.app
