@@ -1,76 +1,101 @@
+import { useState } from "react"
 import nexoraImg from "../assets/Nexora.png"
 import nexorapro from "../assets/nexorapro.png"
+
+import lumina1 from "../assets/lumina-1.png"
+import lumina2 from "../assets/lumina-2.png"
+import lumina3 from "../assets/lumina-3.png"
+
+function LuminaGallery() {
+  const images = [lumina1, lumina2, lumina3]
+  const [active, setActive] = useState(0)
+  return (
+    <div className="w-full lg:w-[50%] xl:w-[55%] 2xl:w-[60%] flex flex-col gap-3">
+      <div className="w-full aspect-[16/10] bg-black rounded-lg xl:rounded-xl overflow-hidden border border-white/10 shadow-2xl">
+        <img src={images[active]} alt={`Lumina ${active+1}`} className="w-full h-full object-cover object-top" />
+      </div>
+      <div className="grid grid-cols-3 gap-2 xl:gap-3">
+        {images.map((img, i) => (
+          <button key={i} onClick={() => setActive(i)} className={`aspect-[16/10] rounded-md overflow-hidden border-2 transition-all ${active === i? "border-white scale-[1.02]" : "border-white/10 opacity-60 hover:opacity-100"}`}>
+            <img src={img} alt={`thumb ${i+1}`} className="w-full h-full object-cover object-top" />
+          </button>
+        ))}
+      </div>
+      <p className="text-[10px] xl:text-[11px] text-white/30 text-center">{active + 1} / 3 • Click to switch</p>
+    </div>
+  )
+}
 
 export default function Featured(){
     return(
         <div className="w-full bg-white">
-            {/* PROJECT 01 */}
+
+            {/* 01i - LUMINA HAUS */}
             <div className="px-5 md:px-8 lg:px-10 xl:px-20 2xl:px-32 py-8 xl:py-12 border-b border-black/10">
-                <p className="uppercase text-[11px] xl:text-[12px] tracking-widest text-black/50 mb-4">Featured Project - 01</p>
-
-                <div className="flex flex-col lg:flex-row xl:flex-row justify-between items-start lg:items-center gap-6 xl:gap-16 2xl:gap-24 p-5 xl:p-10 2xl:p-12 shadow-sm border bg-[#efeff2] xl:bg-[#e9e9ec] rounded-xl xl:rounded-2xl">
-                    {/* Text */}
-                    <div className="w-full lg:w-[50%] xl:w-[45%] 2xl:w-[40%]">
-                        <p className="text-[20px] lg:text-[24px] xl:text-[28px] 2xl:text-[32px] font-bold">Nexora Dashboard</p>
-                        <p className="text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[17px] font-light leading-relaxed mt-2 xl:mt-3 text-black/60 xl:max-w-[520px] 2xl:max-w-[600px]">
-                          A real time analytic dashboard for SaaS team. Clean data visualization, user matrix and performance tracking built for clarity and speed.
-                        </p>
-
-                        <div className="flex flex-wrap gap-2 mt-5 xl:mt-6">
-                             <span className="px-3 py-1.5 rounded-full bg-white text-[10px] xl:text-[11px] border border-black">React</span>
-                             <span className="px-3 py-1.5 rounded-full bg-white text-[10px] xl:text-[11px] border border-black">Typescript</span>
-                             <span className="px-3 py-1.5 rounded-full bg-white text-[10px] xl:text-[11px] border border-black">Tailwind</span>
-                             <span className="px-3 py-1.5 rounded-full bg-white text-[10px] xl:text-[11px] border border-black">Rechart</span>
+                <p className="uppercase text-[11px] xl:text-[12px] tracking-widest text-black/50 mb-4">Featured Project - 01i</p>
+                <div className="flex flex-col lg:flex-row justify-between items-start gap-6 xl:gap-16 p-5 xl:p-10 border bg-[#0e0e0e] rounded-xl xl:rounded-2xl text-white">
+                    <div className="w-full lg:w-[45%]">
+                        <div className="flex gap-2 mb-2">
+                          <span className="text-[10px] px-2.5 py-1 rounded-full bg-white text-black font-medium">New</span>
+                          <span className="text-[10px] px-2.5 py-1 rounded-full border border-white/20">2026 • Configurator</span>
                         </div>
-                        <p className="mt-6 text-[12px] xl:text-[13px]">
-                            <a className="underline hover:font-medium" href="https://nexora-theta-liart.vercel.app/">Visit</a>
-                            <span className="text-[10px] ml-1">➤</span>
+                        <p className="text-[22px] xl:text-[32px] font-bold">Lumina Haus</p>
+                        <p className="text-[13px] xl:text-[15px] text-white/60 mt-2 leading-relaxed">
+                          Luxury architectural material configurator. Real-time material switching, light presets, hotspot product breakdown and Supabase auth.
                         </p>
+                        <div className="flex flex-wrap gap-2 mt-5">
+                             <span className="px-3 py-1.5 rounded-full bg-white/10 text-[10px] xl:text-[11px] border border-white/10">React</span>
+                             <span className="px-3 py-1.5 rounded-full bg-white/10 text-[10px] xl:text-[11px] border border-white/10">Framer Motion</span>
+                             <span className="px-3 py-1.5 rounded-full bg-white/10 text-[10px] xl:text-[11px] border border-white/10">Tailwind</span>
+                             <span className="px-3 py-1.5 rounded-full bg-white/10 text-[10px] xl:text-[11px] border border-white/10">Supabase</span>
+                        </div>
+                        <div className="mt-6 flex gap-3">
+                          <a className="text-[12px] xl:text-[13px] px-4 py-2 rounded-full bg-white text-black font-medium hover:bg-zinc-200 transition" href="https://lum-bay.vercel.app/" target="_blank" rel="noopener noreferrer">Live Demo ➤</a>
+                          <a className="text-[12px] xl:text-[13px] px-4 py-2 rounded-full border border-white/20 hover:bg-white/10 transition" href="https://lum-bay.vercel.app/" target="_blank" rel="noopener noreferrer">Visit Site</a>
+                        </div>
                     </div>
-
-                    {/* Image */}
-                    <div className="w-full lg:w-[50%] xl:w-[55%] 2xl:w-[60%] flex justify-center lg:justify-end">
-                        <img
-                          className="w-full max-w-[520px] xl:max-w-[640px] 2xl:max-w-[760px] h-auto object-contain rounded-lg shadow-lg xl:shadow-xl"
-                          src={nexoraImg}
-                          alt="Nexora dashboard"
-                        />
-                    </div>
+                    <LuminaGallery />
                 </div>
             </div>
 
-            {/* PROJECT 02 */}
+            {/* 02 - NEXORA */}
             <div className="px-5 md:px-8 lg:px-10 xl:px-20 2xl:px-32 py-8 xl:py-12 border-b border-black/10">
                 <p className="uppercase text-[11px] xl:text-[12px] tracking-widest text-black/50 mb-4">Featured Project - 02</p>
-
-                <div className="flex flex-col lg:flex-row xl:flex-row justify-between items-start lg:items-center gap-6 xl:gap-16 2xl:gap-24 p-5 xl:p-10 2xl:p-12 shadow-sm border bg-zinc-100 rounded-xl xl:rounded-2xl">
-                    <div className="w-full lg:w-[50%] xl:w-[45%] 2xl:w-[40%]">
-                        <p className="text-[20px] lg:text-[24px] xl:text-[28px] 2xl:text-[32px] font-bold">Nexora Pro</p>
-                        <p className="text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[17px] font-light leading-relaxed mt-2 xl:mt-3 text-black/60 xl:max-w-[520px] 2xl:max-w-[600px]">
-                          Built a responsive SaaS dashboard to master React list management, interactive customer management with live search, filters & CRUD
-                        </p>
-
-                        <div className="flex flex-wrap gap-2 mt-5 xl:mt-6">
-                             <span className="px-3 py-1.5 rounded-full bg-white text-[10px] xl:text-[11px] border border-black">React</span>
-                             <span className="px-3 py-1.5 rounded-full bg-white text-[10px] xl:text-[11px] border border-black">Typescript</span>
-                             <span className="px-3 py-1.5 rounded-full bg-white text-[10px] xl:text-[11px] border border-black">Tailwind</span>
-                             <span className="px-3 py-1.5 rounded-full bg-white text-[10px] xl:text-[11px] border border-black">Rechart</span>
+                <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-6 xl:gap-16 p-5 xl:p-10 border bg-[#efeff2] rounded-xl">
+                    <div className="w-full lg:w-[45%]">
+                        <p className="text-[20px] xl:text-[28px] font-bold">Nexora Dashboard</p>
+                        <p className="text-[13px] xl:text-[15px] text-black/60 mt-2">Real time analytic dashboard for SaaS teams. Clean data visualization and performance tracking.</p>
+                        <div className="flex flex-wrap gap-2 mt-5">
+                             <span className="px-3 py-1.5 rounded-full bg-white text-[10px] border border-black">React</span>
+                             <span className="px-3 py-1.5 rounded-full bg-white text-[10px] border border-black">Typescript</span>
+                             <span className="px-3 py-1.5 rounded-full bg-white text-[10px] border border-black">Tailwind</span>
+                             <span className="px-3 py-1.5 rounded-full bg-white text-[10px] border border-black">Rechart</span>
                         </div>
-                        <p className="mt-6 text-[12px] xl:text-[13px]">
-                            <a className="underline hover:font-medium" href="https://nexora-pro-seven.vercel.app/">Visit</a>
-                            <span className="text-[10px] ml-1">➤</span>
-                        </p>
+                        <a className="mt-6 inline-block text-[12px] underline" href="https://nexora-theta-liart.vercel.app/">Visit ➤</a>
                     </div>
-
-                    <div className="w-full lg:w-[50%] xl:w-[55%] 2xl:w-[60%] flex justify-center lg:justify-end">
-                        <img
-                          className="w-full max-w-[520px] xl:max-w-[640px] 2xl:max-w-[760px] h-auto object-contain rounded-lg shadow-lg xl:shadow-xl"
-                          src={nexorapro}
-                          alt="Nexora Pro dashboard"
-                        />
-                    </div>
+                    <img className="w-full lg:w-[55%] max-w-[640px] rounded-lg shadow-lg object-contain" src={nexoraImg} alt="Nexora" />
                 </div>
             </div>
+
+            {/* 03 - NEXORA PRO */}
+            <div className="px-5 md:px-8 lg:px-10 xl:px-20 2xl:px-32 py-8 xl:py-12 border-b border-black/10">
+                <p className="uppercase text-[11px] xl:text-[12px] tracking-widest text-black/50 mb-4">Featured Project - 03</p>
+                <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-6 xl:gap-16 p-5 xl:p-10 border bg-zinc-100 rounded-xl">
+                    <div className="w-full lg:w-[45%]">
+                        <p className="text-[20px] xl:text-[28px] font-bold">Nexora Pro</p>
+                        <p className="text-[13px] xl:text-[15px] text-black/60 mt-2">Responsive SaaS dashboard with search, filters & CRUD</p>
+                        <div className="flex flex-wrap gap-2 mt-5">
+                             <span className="px-3 py-1.5 rounded-full bg-white text-[10px] border border-black">React</span>
+                             <span className="px-3 py-1.5 rounded-full bg-white text-[10px] border border-black">Typescript</span>
+                             <span className="px-3 py-1.5 rounded-full bg-white text-[10px] border border-black">Tailwind</span>
+                             <span className="px-3 py-1.5 rounded-full bg-white text-[10px] border border-black">Rechart</span>
+                        </div>
+                        <a className="mt-6 inline-block text-[12px] underline" href="https://nexora-pro-seven.vercel.app/">Visit ➤</a>
+                    </div>
+                    <img className="w-full lg:w-[55%] max-w-[640px] rounded-lg shadow-lg object-contain" src={nexorapro} alt="Nexora Pro" />
+                </div>
+            </div>
+
         </div>
     )
 }
