@@ -31,55 +31,40 @@ const projects = [
 
 export default function OtherProjects() {
   return (
-    <section className="px-4 lg:px-8 py-4 bg-white border-b border-black/10">
-      {/* Header */}
-      <div className="flex items-end justify-between mb-10">
-        <h2 className="uppercase leading-none tracking-[-0.02em]">
-          Other Projects - 03
-        </h2>
-      </div>
+    <section className="px-5 md:px-8 lg:px-10 xl:px-20 2xl:px-32 py-8 xl:py-12 bg-white border-b border-black/10">
+      <h2 className="uppercase text-[11px] xl:text-[12px] tracking-widest text-black/50 mb-6 xl:mb-10">
+        Other Projects - 03
+      </h2>
 
-      {/* Grid */}
-      <div className="grid grid-cols-1 md:flex md:gap-6 lg:gap-6 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3 gap-6 xl:gap-8 2xl:gap-10">
         {projects.map((p, i) => (
           <div key={i} className="group cursor-pointer">
-            {/* Image now redirects */}
             <a href={p.link} target="_blank" rel="noopener noreferrer">
-              <div className="bg-white w-full h-[280px] md:h-[150px] md:w-[225px] lg:w-[430px] rounded-sm overflow-hidden shadow-sm">
+              <div className="w-full h-[260px] md:h-[180px] lg:h-[200px] xl:h-[260px] 2xl:h-[320px] rounded-lg xl:rounded-xl overflow-hidden shadow-sm bg-white">
                 <img
                   src={p.img}
                   alt={p.title}
-                  className="w-full h-full object-cover transition-transform duration-700 ease-in-out group-hover:scale-110"
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
               </div>
             </a>
 
-            {/* Text under */}
-            <div className="mt-4 flex items-start justify-between">
-              <div>
-                <div className="flex  gap-5">
-                <h3 className="text-[16px] font-medium">{p.title}</h3>
-                 <span className="md:mt-[-5px] md:p-2 text-[13px] text-black/40 border border-black/10 rounded-full px-3 py-1 group-hover:bg-black group-hover:text-white transition-colors">
-                {p.year}
-                 </span>
-                </div>
-                <p className="text-[13px] text-black/50 mt-1 max-w-[300px]">{p.tag}</p>
-
-                {p.stack.length > 0 && (
-                  <div className="flex gap-1 mt-3">
-                    {p.stack.map((tech) => (
-                      <span
-                        key={tech}
-                        className="inline-flex items-center gap-1.5 text-[10px] md:text-[7px] tracking-[0.14em] uppercase font-medium px-3.5 py-1.5 rounded-full bg-[#f2f2f2] text-black/60 border border-black/5"
-                      >
-                        <span className="w-1 h-1 bg-black rounded-full"></span>
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
-                )}
+            <div className="mt-4">
+              <div className="flex gap-3 items-center">
+                <h3 className="text-[16px] xl:text-[18px] 2xl:text-[20px] font-medium">{p.title}</h3>
+                <span className="text-[11px] xl:text-[12px] text-black/40 border border-black/10 rounded-full px-3 py-1 group-hover:bg-black group-hover:text-white transition-colors">
+                  {p.year}
+                </span>
               </div>
-             
+              <p className="text-[13px] xl:text-[14px] text-black/50 mt-1 max-w-[300px] xl:max-w-[400px]">{p.tag}</p>
+
+              <div className="flex gap-1.5 mt-3 flex-wrap">
+                {p.stack.map((tech) => (
+                  <span key={tech} className="text-[9px] xl:text-[10px] tracking-widest uppercase px-3 py-1 rounded-full bg-[#f2f2f2] text-black/60 border border-black/5">
+                    {tech}
+                  </span>
+                ))}
+              </div>
             </div>
           </div>
         ))}
