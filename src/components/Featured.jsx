@@ -139,7 +139,11 @@ export default function Featured(){
                 <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-6 xl:gap-16 p-5 xl:p-10 border bg-rose-50 rounded-xl">
                     <div className="w-full lg:w-[45%]">
                         <p className="text-[20px] xl:text-[28px] font-bold">Orion</p>
-                        <p className="text-[13px] xl:text-[15px] text-black/60 mt-2"> Immersive gaming landing experience. Staggered circular arcs, vertical ORION typography system, and full-screen character reveal with trailer interaction. Built for XL displays.</p>
+                        <p className="text-[13px] xl:text-[15px] text-black/60 mt-2"> Immersive gaming landing experience. Staggered circular arcs, Use of icons from Lucid React, and full-screen character reveal with trailer interaction.</p>
+                        <div className="text-black/60 p-[2px] mt-[2px] w-30 h-8 rounded-xl  bg-[#e7aab1] border border-black/10 place-items-center relative">Patent Pending 
+                          <span className="absolute top-1 right-1 w-3 h-3 bg-red-500 text-[8px]  font-bold rounded-full grid place-items-center">!
+                          </span>
+                        </div>
                         <div className="flex flex-wrap gap-2 mt-5">
                              <span className="px-3 py-1.5 rounded-full bg-white text-[10px] border border-black">React</span>
                              <span className="px-3 py-1.5 rounded-full bg-white text-[10px] border border-black">Typescript</span>
