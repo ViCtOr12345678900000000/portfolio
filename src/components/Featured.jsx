@@ -133,9 +133,29 @@ export default function Featured(){
                 </div>
             </div>
 
-            {/* 02i - NEXORA */}
+            {/* 02i - Orion */}
             <div className="px-5 md:px-8 lg:px-10 xl:px-20 2xl:px-32 py-8 xl:py-12 border-b border-black/10">
                 <p className="uppercase text-[11px] xl:text-[12px] tracking-widest text-black/50 mb-4">Featured Project - 02i</p>
+                <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-6 xl:gap-16 p-5 xl:p-10 border bg-rose-50 rounded-xl">
+                    <div className="w-full lg:w-[45%]">
+                        <p className="text-[20px] xl:text-[28px] font-bold">Orion</p>
+                        <p className="text-[13px] xl:text-[15px] text-black/60 mt-2"> Immersive gaming landing experience. Staggered circular arcs, vertical ORION typography system, and full-screen character reveal with trailer interaction. Built for XL displays.</p>
+                        <div className="flex flex-wrap gap-2 mt-5">
+                             <span className="px-3 py-1.5 rounded-full bg-white text-[10px] border border-black">React</span>
+                             <span className="px-3 py-1.5 rounded-full bg-white text-[10px] border border-black">Typescript</span>
+                             <span className="px-3 py-1.5 rounded-full bg-white text-[10px] border border-black">Tailwind</span>
+                            
+                        </div>
+                         <a className=" inline-block text-[15px] p-2 uppercase font-bold underline " href="https://orion-two-taupe.vercel.app/">Visit Site</a>
+                    </div>
+                    <img className="w-full lg:w-[55%] max-w-[640px] rounded-lg shadow-lg object-contain" src={orion} alt="Nexora" />
+                </div>
+            </div>
+
+
+            {/* 02ii - NEXORA */}
+            <div className="px-5 md:px-8 lg:px-10 xl:px-20 2xl:px-32 py-8 xl:py-12 border-b border-black/10">
+                <p className="uppercase text-[11px] xl:text-[12px] tracking-widest text-black/50 mb-4">Featured Project - 02ii</p>
                 <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-6 xl:gap-16 p-5 xl:p-10 border bg-[#efeff2] rounded-xl">
                     <div className="w-full lg:w-[45%]">
                         <p className="text-[20px] xl:text-[28px] font-bold">Nexora Dashboard</p>
@@ -153,24 +173,7 @@ export default function Featured(){
             </div>
 
             
-            {/* 02ii - Orion */}
-            <div className="px-5 md:px-8 lg:px-10 xl:px-20 2xl:px-32 py-8 xl:py-12 border-b border-black/10">
-                <p className="uppercase text-[11px] xl:text-[12px] tracking-widest text-black/50 mb-4">Featured Project - 02ii</p>
-                <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-6 xl:gap-16 p-5 xl:p-10 border bg-rose-50 rounded-xl">
-                    <div className="w-full lg:w-[45%]">
-                        <p className="text-[20px] xl:text-[28px] font-bold">Orion</p>
-                        <p className="text-[13px] xl:text-[15px] text-black/60 mt-2"> Immersive gaming landing experience. Staggered circular arcs, vertical ORION typography system, and full-screen character reveal with trailer interaction. Built for XL displays.</p>
-                        <div className="flex flex-wrap gap-2 mt-5">
-                             <span className="px-3 py-1.5 rounded-full bg-white text-[10px] border border-black">React</span>
-                             <span className="px-3 py-1.5 rounded-full bg-white text-[10px] border border-black">Typescript</span>
-                             <span className="px-3 py-1.5 rounded-full bg-white text-[10px] border border-black">Tailwind</span>
-                            
-                        </div>
-                         <a className=" inline-block text-[15px] p-2 uppercase font-bold underline " href="https://orion-two-taupe.vercel.app/">Visit Site</a>
-                    </div>
-                    <img className="w-full lg:w-[55%] max-w-[640px] rounded-lg shadow-lg object-contain" src={orion} alt="Nexora" />
-                </div>
-            </div>
+            
            
 
         </div>
