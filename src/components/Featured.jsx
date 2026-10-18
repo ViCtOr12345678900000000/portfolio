@@ -55,7 +55,7 @@ const initialUsers = [
     type: 'single',
     bg: 'bg-rose-50',
     status: 'pending', 
-  statusText: 'Patterns Pending',
+  statusText: 'Pending',
     image: orion,
     link:'https://orion-two-taupe.vercel.app/',
   },
@@ -78,8 +78,8 @@ function Gallery({ images, theme }) {
   const isDark = theme === 'dark'
   return (
     <div className="w-full lg:w-[50%] xl:w-[55%] 2xl:w-[60%] flex flex-col gap-3">
-      <div className={`w-full aspect-[16/10] rounded-lg xl:rounded-xl overflow-hidden border shadow-2xl ${isDark ? 'bg-black border-white/10' : 'bg-white border-black/10'}`}>
-        <img src={images[active]} alt={`project ${active+1}`} className="w-full h-full object-cover object-top" />
+      <div className={`w-full  rounded-lg xl:rounded-xl overflow-hidden border shadow-2xl ${isDark ? 'bg-black border-white/10' : 'bg-white border-black/10'}`}>
+        <img src={images[active]} alt={`project ${active+1}`} className="w-full h-full object-contain " />
       </div>
       <div className="grid grid-cols-3 gap-2 xl:gap-3">
         {images.map((img, i) => (
@@ -130,12 +130,12 @@ export default function Featured(){
 
 
                    {/* ADD THIS - PENDING BADGE */}
-    {data.status === 'pending' && (
-      <div className="text-blue-100/50 p-[5px] mt-3 w-28 h-9 rounded-xl text-[13px] bg-black/60 border border-black/10 place-items-center relative flex justify-center items-center">
-        {data.statusText || 'Pending'}
-        <span className="absolute top-[-3px] right-[-7px] w-3 h-3 bg-red-500 text-[8px] text-white font-bold rounded-full grid place-items-center">!</span>
-      </div>
-    )}
+            {data.status === 'pending' && (
+              <div className="text-blue-100/50 p-[5px] mt-3 w-28 h-9 rounded-xl text-[13px] bg-black/60 border border-black/10 place-items-center relative flex justify-center items-center">
+                {data.statusText || 'Pending'}
+                    <span className="absolute top-[-3px] right-[-7px] w-3 h-3 bg-red-500 text-[8px] text-white font-bold rounded-full grid place-items-center">!</span>
+              </div>
+            )}
 
 
                 <div className="flex flex-wrap gap-2 mt-5">
