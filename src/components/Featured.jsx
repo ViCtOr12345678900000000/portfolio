@@ -56,7 +56,7 @@ const initialUsers = [
     type: 'single', // <-- Style B
     bg: 'bg-zinc-100',
     image: nova,
-    link:'https://nexora-pro-seven.vercel.app/',
+    link:'https://novastock-taupe.vercel.app/',
   },
   { 
     id: 5,
