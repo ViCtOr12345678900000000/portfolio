@@ -8,6 +8,7 @@ import lumina3 from "../assets/lumina-3.png"
 import jhinora1 from "../assets/jhinora-1.png"
 import jhinora2 from "../assets/jhinora-2.png"
 import jhinora3 from "../assets/jhinora-3.png"
+import nova from "../assets/nova.png"
 
 // 1. YOUR ARRAY - NOW WITH STYLE INFO
 const initialUsers = [
@@ -46,9 +47,20 @@ const initialUsers = [
     image: nexorapro,
     link:'https://nexora-pro-seven.vercel.app/',
   },
-  { 
+  {
     id: 4,
     header:'Featured Project - 02i', 
+    name: 'Nova', 
+    info:'A modern, minimal inventory dashboard for boutique owners to track products, stock levels, and value in real-time. Built with a focus on clean UI and fast interactions.', 
+    tags: ['React','Typescript','Tailwind'],
+    type: 'single', // <-- Style B
+    bg: 'bg-zinc-100',
+    image: nova,
+    link:'https://nexora-pro-seven.vercel.app/',
+  },
+  { 
+    id: 5,
+    header:'Featured Project - 02ii', 
     name: 'Orion', 
     info:'Immersive gaming landing experience. Staggered circular arcs, Use of icons from Lucid React, and full-screen character reveal with trailer interaction.', 
     tags: ['React','Typescript','Tailwind'],
@@ -60,8 +72,8 @@ const initialUsers = [
     link:'https://orion-two-taupe.vercel.app/',
   },
   { 
-    id: 5,
-    header:'Featured Project - 02ii', 
+    id: 6,
+    header:'Featured Project - 02iii', 
     name: 'Nexora Dashboard', 
     info:'Real time analytic dashboard for SaaS teams. Clean data visualization and performance tracking.', 
     tags: ['React','Typescript','Tailwind','Rechart'],
