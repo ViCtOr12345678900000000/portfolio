@@ -1,10 +1,11 @@
 import { useState } from "react"
 import nexoraImg from "../assets/Nexora.png"
-import nexorapro from "../assets/nexorapro.png"
+import nex1 from "../assets/nex1.png"
+import nex2 from "../assets/nex2.png"
+import nex3 from "../assets/nex3.png"
+import nova1 from "../assets/nova1.png"
+import nova2 from "../assets/nova2.png"
 import orion from "../assets/orion.png"
-import lumina1 from "../assets/lumina-1.png"
-import lumina2 from "../assets/lumina-2.png"
-import lumina3 from "../assets/lumina-3.png"
 import jhinora1 from "../assets/jhinora-1.png"
 import jhinora2 from "../assets/jhinora-2.png"
 import jhinora3 from "../assets/jhinora-3.png"
@@ -14,18 +15,31 @@ import nova from "../assets/nova.png"
 const initialUsers = [
   { 
     id: 1, 
-    header:'Featured Project - 01i', 
-    name: 'Lumina Haus', 
+    header:'Featured Project - 01', 
+    name: 'Nexora - Pro', 
     info:'Luxury architectural material configurator. Real-time material switching, light presets, hotspot product breakdown and Supabase auth.', 
     tags: ['React','Framer Motion','Tailwind','Supabase'],
-    badge1: 'New', badge2: '2026 • Configurator',
+    badge1: 'New', badge2: '2026 • SaaS Dashboard',
     type: 'gallery', // <-- Style A
-    theme: 'dark', // bg #0e0e0e text white
-    images: [lumina1, lumina2, lumina3],
-    link:'https://lum-bay.vercel.app/',
+    theme: 'white', // bg #0e0e0e text white
+    images: [nex1, nex2, nex3],
+    link:'https://nexora-pro-seven.vercel.app/',
+  },
+  {
+    id: 2,
+    header:'Featured Project - 01i', 
+    name: 'NovaStock', 
+    info:'A modern, minimal inventory dashboard for boutique owners to track products, stock levels, and value in real-time. Built with a focus on clean UI and fast interactions.', 
+    tags: ['React','Typescript','Tailwind'],
+    type: 'gallery', 
+     badge1: 'New', badge2: '2026 • Inventory',
+     theme: 'white', 
+    bg: 'bg-zinc-100',
+    images: [nova, nova1, nova2],
+    link:'https://novastock-taupe.vercel.app/',
   },
   { 
-    id: 2,
+    id: 3,
     header:'Featured Project - 01ii', 
     name: 'Jhinora Pro', 
     info:'High-fashion studio portfolio for Jhinora Studios. Editorial storytelling, sticky project reveals, fullscreen manifesto and immersive bottom contact.', 
@@ -36,30 +50,9 @@ const initialUsers = [
     images: [jhinora1, jhinora2, jhinora3],
     link:'https://jhin-chi.vercel.app',
   },
+  
   { 
-    id: 3,
-    header:'Featured Project - 02', 
-    name: 'Nexora Pro', 
-    info:'Responsive SaaS dashboard with search, filters & CRUD', 
-    tags: ['React','Typescript','Tailwind','Rechart'],
-    type: 'single', // <-- Style B
-    bg: 'bg-zinc-100',
-    image: nexorapro,
-    link:'https://nexora-pro-seven.vercel.app/',
-  },
-  {
     id: 4,
-    header:'Featured Project - 02i', 
-    name: 'Nova', 
-    info:'A modern, minimal inventory dashboard for boutique owners to track products, stock levels, and value in real-time. Built with a focus on clean UI and fast interactions.', 
-    tags: ['React','Typescript','Tailwind'],
-    type: 'single', // <-- Style B
-    bg: 'bg-zinc-100',
-    image: nova,
-    link:'https://novastock-taupe.vercel.app/',
-  },
-  { 
-    id: 5,
     header:'Featured Project - 02ii', 
     name: 'Orion', 
     info:'Immersive gaming landing experience. Staggered circular arcs, Use of icons from Lucid React, and full-screen character reveal with trailer interaction.', 
@@ -72,7 +65,7 @@ const initialUsers = [
     link:'https://orion-two-taupe.vercel.app/',
   },
   { 
-    id: 6,
+    id: 5,
     header:'Featured Project - 02iii', 
     name: 'Nexora Dashboard', 
     info:'Real time analytic dashboard for SaaS teams. Clean data visualization and performance tracking.', 
