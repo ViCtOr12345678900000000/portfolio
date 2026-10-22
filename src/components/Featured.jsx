@@ -17,8 +17,8 @@ const initialUsers = [
     id: 1, 
     header:'Featured Project - 01', 
     name: 'Nexora - Pro', 
-    info:'Luxury architectural material configurator. Real-time material switching, light presets, hotspot product breakdown and Supabase auth.', 
-    tags: ['React','Framer Motion','Tailwind','Supabase'],
+    info:'Nexora-Pro is a modern, white-themed SaaS analytics dashboard built to showcase real-world dashboard patterns used in production products. It focuses on performance, clean UI, and core React fundamentals without any backend - all data is handled with local state.', 
+    tags: ['React','Tailwind','Recharts'],
     badge1: 'New', badge2: '2026 • SaaS Dashboard',
     type: 'gallery', // <-- Style A
     theme: 'white', // bg #0e0e0e text white
@@ -30,7 +30,7 @@ const initialUsers = [
     header:'Featured Project - 01i', 
     name: 'NovaStock', 
     info:'A modern, minimal inventory dashboard for boutique owners to track products, stock levels, and value in real-time. Built with a focus on clean UI and fast interactions.', 
-    tags: ['React','Typescript','Tailwind'],
+    tags: ['React','JS','Tailwind'],
     type: 'gallery', 
      badge1: 'New', badge2: '2026 • Inventory',
      theme: 'white', 
@@ -43,7 +43,7 @@ const initialUsers = [
     header:'Featured Project - 01ii', 
     name: 'Jhinora Pro', 
     info:'High-fashion studio portfolio for Jhinora Studios. Editorial storytelling, sticky project reveals, fullscreen manifesto and immersive bottom contact.', 
-    tags: ['React','Framer Motion','Tailwind','Lenis Scroll'],
+    tags: ['React','JS','Tailwind',],
     badge1: 'Flagship', badge2: '2026 • Studio Website',
     type: 'gallery', // <-- Style A
     theme: 'light', // bg #fefefe text black
