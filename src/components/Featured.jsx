@@ -36,7 +36,7 @@ const initialUsers = [
      theme: 'white', 
     bg: 'bg-zinc-100',
     images: [lum1,lum2,lum3],
-    link:'https://novastock-taupe.vercel.app/',
+    link:'https://loom-house-inventory.vercel.app/',
   },
   { 
     id: 3,
