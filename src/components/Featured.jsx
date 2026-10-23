@@ -3,13 +3,13 @@ import nexoraImg from "../assets/Nexora.png"
 import nex1 from "../assets/nex1.png"
 import nex2 from "../assets/nex2.png"
 import nex3 from "../assets/nex3.png"
-import nova1 from "../assets/nova1.png"
-import nova2 from "../assets/nova2.png"
 import orion from "../assets/orion.png"
 import jhinora1 from "../assets/jhinora-1.png"
 import jhinora2 from "../assets/jhinora-2.png"
 import jhinora3 from "../assets/jhinora-3.png"
-import nova from "../assets/nova.png"
+import lum1 from "../assets/lum1.png"
+import lum2 from "../assets/lum2.png"
+import lum3 from "../assets/lum3.png"
 
 // 1. YOUR ARRAY - NOW WITH STYLE INFO
 const initialUsers = [
@@ -28,14 +28,14 @@ const initialUsers = [
   {
     id: 2,
     header:'Featured Project - 01i', 
-    name: 'NovaStock', 
+    name: 'Loom - House Inventory', 
     info:'A modern, minimal inventory dashboard for boutique owners to track products, stock levels, and value in real-time. Built with a focus on clean UI and fast interactions.', 
     tags: ['React','JS','Tailwind'],
     type: 'gallery', 
      badge1: 'New', badge2: '2026 • Inventory',
      theme: 'white', 
     bg: 'bg-zinc-100',
-    images: [nova, nova1, nova2],
+    images: [lum1,lum2,lum3],
     link:'https://novastock-taupe.vercel.app/',
   },
   { 
