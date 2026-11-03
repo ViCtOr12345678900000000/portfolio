@@ -10,6 +10,9 @@ import jhinora3 from "../assets/jhinora-3.png"
 import lum1 from "../assets/lum1.png"
 import lum2 from "../assets/lum2.png"
 import lum3 from "../assets/lum3.png"
+import novaS from "../assets/novaS.png"
+import novaS1 from "../assets/novaS1.png"
+import novaS2 from "../assets/novaS2.png"
 
 // 1. YOUR ARRAY - NOW WITH STYLE INFO
 const initialUsers = [
@@ -41,14 +44,14 @@ const initialUsers = [
   { 
     id: 3,
     header:'Featured Project - 01ii', 
-    name: 'Jhinora Pro', 
-    info:'High-fashion studio portfolio for Jhinora Studios. Editorial storytelling, sticky project reveals, fullscreen manifesto and immersive bottom contact.', 
-    tags: ['React','JS','Tailwind',],
-    badge1: 'Flagship', badge2: '2026 • Studio Website',
+    name: 'Nova Store', 
+    info:'E-Commerce web-app with add to cart functionality and product description modal', 
+    tags: ['React','JS','Tailwind'],
+    badge1: 'E-commerce', badge2: '2026 • Store',
     type: 'gallery', // <-- Style A
     theme: 'light', // bg #fefefe text black
-    images: [jhinora1, jhinora2, jhinora3],
-    link:'https://jhin-chi.vercel.app',
+    images: [novaS, novaS1, novaS2],
+    link:'https://novastore-rose-one.vercel.app/',
   },
   
   { 
