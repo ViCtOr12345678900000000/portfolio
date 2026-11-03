@@ -54,19 +54,7 @@ const initialUsers = [
     link:'https://novastore-rose-one.vercel.app/',
   },
   
-  { 
-    id: 4,
-    header:'Featured Project - 02ii', 
-    name: 'Orion', 
-    info:'Immersive gaming landing experience. Staggered circular arcs, Use of icons from Lucid React, and full-screen character reveal with trailer interaction.', 
-    tags: ['React','Typescript','Tailwind'],
-    type: 'single',
-    bg: 'bg-rose-50',
-    status: 'pending', 
-  statusText: 'Pending',
-    image: orion,
-    link:'https://orion-two-taupe.vercel.app/',
-  },
+
   { 
     id: 5,
     header:'Featured Project - 02iii', 
