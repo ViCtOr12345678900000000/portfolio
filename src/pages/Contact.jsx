@@ -17,7 +17,7 @@ export default function Contact(){
             <a href="https://wa.me/2348134526761" target="_blank" className="block border p-5 rounded-2xl hover:bg-black hover:text-white transition"><p className="text-[11px] opacity-50">WHATSAPP</p><p className="font-medium mt-1">+234 813 452 6761 — Fastest reply</p></a>
             <div className="border p-5 rounded-2xl text-[13px] space-y-1">
               <p><a className="underline" href="https://portfolio-z5s4.vercel.app" target="_blank">portfolio-z5s4.vercel.app</a> — Main</p>
-              <p><a className="underline" href="https://lum-bay.vercel.app/" target="_blank">lum-bay.vercel.app</a> — Lumina</p>
+              <p><a className="underline" href="https://novastore-rose-one.vercel.app/" target="_blank">novastore-rose-one.vercel.app</a> — Store</p>
               <p><a className="underline" href="https://nexora-theta-liart.vercel.app/" target="_blank">Nexora</a> / <a className="underline" href="https://nexora-pro-seven.vercel.app/" target="_blank">Nexora Pro</a></p>
             </div>
           </div>

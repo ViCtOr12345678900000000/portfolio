@@ -45,7 +45,7 @@ const initialUsers = [
     id: 3,
     header:'Featured Project - 01ii', 
     name: 'Nova Store', 
-    info:'E-Commerce web-app with add to cart functionality and product description modal', 
+    info:'E-Commerce web-app with add to cart functionality and product description modal.', 
     tags: ['React','JS','Tailwind'],
     badge1: 'E-commerce', badge2: '2026 • Store',
     type: 'gallery', // <-- Style A

@@ -1,7 +1,6 @@
 import Info from "../components/Info"
 const services = [
   { title: "SaaS Dashboard Development", desc: "Full React + TypeScript dashboard with charts, filters, CRUD. Like Nexora.", price: "From $800" },
-  { title: "Product Configurator", desc: "Like Lumina Haus — real-time material switching, cost breakdown, cart.", price: "From $1000" },
   { title: "Landing Page / Portfolio", desc: "Fast, responsive. Converts visitors to clients.", price: "From $300" },
   { title: "Figma to React Code", desc: "Pixel-perfect conversion to Tailwind + Framer Motion.", price: "From $250" },
 ]
