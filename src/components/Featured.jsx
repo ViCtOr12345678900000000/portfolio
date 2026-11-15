@@ -64,7 +64,7 @@ const initialUsers = [
     type: 'single',
     bg: 'bg-[#efeff2]',
     image: nexoraImg,
-    link:'https://nexora-pro-seven.vercel.app/',
+    link:'https://nexora-theta-liart.vercel.app/',
   },
 ];
 
