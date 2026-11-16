@@ -20,7 +20,7 @@ const initialUsers = [
     id: 1, 
     header:'Featured Project - 01', 
     name: 'Nexora - Pro', 
-    info:'Nexora-Pro is a modern, white-themed SaaS analytics dashboard built to showcase real-world dashboard patterns used in production products. It focuses on performance, clean UI, and core React fundamentals without any backend - all data is handled with local state.', 
+    info:'Nexora-Pro is a modern, white-themed SaaS analytics dashboard built to showcase real-world dashboard patterns used in production products. It focuses on performance, and a clean UI.', 
     tags: ['React','Tailwind','Recharts'],
     badge1: 'New', badge2: '2026 • SaaS Dashboard',
     type: 'gallery', // <-- Style A
@@ -30,7 +30,7 @@ const initialUsers = [
   },
   {
     id: 2,
-    header:'Featured Project - 01i', 
+    header:'Featured Project - 02', 
     name: 'Loom - House Inventory', 
     info:'A modern, minimal inventory dashboard for boutique owners to track products, stock levels, and value in real-time. Built with a focus on clean UI and fast interactions.', 
     tags: ['React','JS','Tailwind'],
@@ -43,7 +43,7 @@ const initialUsers = [
   },
   { 
     id: 3,
-    header:'Featured Project - 01ii', 
+    header:'Featured Project - 03', 
     name: 'Nova Store', 
     info:'E-Commerce web-app with add to cart functionality and product description modal.', 
     tags: ['React','JS','Tailwind'],
@@ -57,10 +57,10 @@ const initialUsers = [
 
   { 
     id: 5,
-    header:'Featured Project - 02iii', 
+    header:'Featured Project - 04', 
     name: 'Nexora Dashboard', 
-    info:'Real time analytic dashboard for SaaS teams. Clean data visualization and performance tracking.', 
-    tags: ['React','Typescript','Tailwind','Rechart'],
+    info:'Analytic dashboard for SaaS teams. Clean data visualization and performance tracking.', 
+    tags: ['React','JS','Tailwind','Rechart'],
     type: 'single',
     bg: 'bg-[#efeff2]',
     image: nexoraImg,
