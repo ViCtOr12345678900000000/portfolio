@@ -1,6 +1,6 @@
 // components/Sidebar.jsx
 import { useState } from 'react';
-
+ 
 export default function Sidebar({ isOpen, setIsOpen }) {
   const [active, setActive] = useState('Work');
   const links = ['Work', 'About', 'Services', 'Contact'];

@@ -8,7 +8,7 @@ export default function Navbar({ isOpen, setIsOpen }){
         </button>
         <h1 className="text-[14px] tracking-[0.18em] uppercase font-medium">Victor Chinedu</h1>
       </div>
-
+  
       <div className="flex items-center gap-6">
         {/* THIS SHOWS ON MD & LG ONLY */}
         <nav className="hidden md:flex items-center gap-3 text-[14px]">
@@ -21,9 +21,7 @@ export default function Navbar({ isOpen, setIsOpen }){
           <button className="hover:opacity-60">Contact</button>
         </nav>
 
-        <button className="text-white h-8 px-3.5 bg-[#1a1a20] rounded-full text-[12px] font-medium flex items-center gap-1.5">
-          <span>↓</span> Export
-        </button>
+
       </div>
     </header>
   )

@@ -6,7 +6,7 @@ export default function Info(){
             <span className="hidden md:block text-[10px] xl:text-[11px] text-black/30">•</span>
             <p className="text-[8px] md:text-[10px] xl:text-[11px] 2xl:text-[12px]">vercel.com/vardevictor78-8708s-projects</p>
             <span className="hidden md:block text-[10px] xl:text-[11px] text-black/20">────────</span>
-            <p className="text-[8px] md:text-[10px] xl:text-[11px] 2xl:text-[12px]">built with thoughful detail.</p>
+            <p className="text-[8px] md:text-[10px] xl:text-[11px] 2xl:text-[12px]">built with thoughtful detail.</p>
         </div>
     )
 }

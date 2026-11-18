@@ -6,7 +6,7 @@ export default function PortfolioHeader(){
   const location = useLocation() //locstion im on now
   const navigate = useNavigate() // locstion i wsnt to be
 
-  const goToWork = () => {
+  const goToWork = () => { 
     setOpen(false)
     if(location.pathname!== "/"){
       navigate("/") //if im not @ home tske me there
